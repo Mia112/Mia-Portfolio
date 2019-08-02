@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <title>Portfolio</title>
+</head>
+
+<body>
+
+  <body data-spy="scroll" data-target=".navbar" data-offset="74">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <span class="logo">Miatta Sheriff</span>
+        </a>
+        <button id="toggle" class="navbar-toggler" type="button" data-toggle="collapse"
+          data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="myNavbar navbar-nav ml-auto">
+            <li class="nav-item" id="home-link-item">
+              <a id="link" class="nav-link" href="#home">
+                <i class="fa fa-home" aria-hidden="true"></i>Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a id="link" class="nav-link" href="#about">
+                <i class="fa fa-user" aria-hidden="true"></i>About</a>
+            </li>
+            <li class="nav-item">
+              <a id="link" class="nav-link" href="#projects">
+                <i class="fa fa-folder" aria-hidden="true"></i>Projects</a>
+            </li>
+            <li class="nav-item">
+              <a id="link" class="nav-link" href="#contact">
+                <i class="fa fa-volume-control-phone" aria-hidden="true"></i>Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div id="bg-home"></div>
+      <section id="home">
+        <div class="container content">
+          <div class="row">
+            <div class="col-12">
+              <div class="nameContent">
+                <h1 class="name">Hello, I'm Miatta Sheriff</h1>
+                <h2 class="title">Full Stack Web Developer</h2>
+                <a href="#about" class="downPointing align-middle text-center btn">
+                  <i class="fa fa-angle-double-down" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="about" class="pt-3">
+        <div class="container content">
+          <div class="row">
+            <div class="col-12">
+              <h1 class="sub-header">About Me</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+              <div class="col-12">
+                <div class="img">
+                  <img class="rounded img-fluid max-width: 100%; and height: auto; profileImage"
+                    src="assets/images/profileimg.JPG" alt="">
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="social-div text-center hide-element">
+                  <a class="contact-link" href="tel:1-404-437-9087">
+                    <i class="fas fa-phone-square"></i>
+                  </a>
+                  <a class="contact-link" href="mailto:msheriff@gmail.com">
+                    <i class="far fa-envelope contactItem"></i>
+                  </a>
+                  <a class="contact-link" href="https://github.com/Mia112">
+                    <i class="fab fa-github-square contactItem"></i>
+                  </a>
+                  <a class="contact-link" href="https://www.linkedin.com/in/emerson-doyah-0ba6b180/">
+                    <i class="fab fa-linkedin contactItem"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+              <div class="bio">
+                <p>
+                  A Liberian, living in the vibrant city of Atlanta, Georgia.
+                  I have lived here most of my life, so I guess you can consider me an Atlian.
+                  I’m a Software Analyst, aka Tester, QA.
+                  I’m often describe as being an introvert, which I promise you I am Not.
+                  It just takes me a while to warm up to people.
+                  I am Goal-oriented (except for when it comes to keeping my closet organize),
+                  a foodie, trying to get abs.(I don’t see it happening in this lifetime).
+                  I really enjoy learning new technologies, developing awesome projects,
+                  from games, and web applications. 
+                  When I am not coding or working, I love traveling to far away places.
+                  Things that make me happy, music, scoring on a bargain, and helping others.
+                </p>
+                <p>
+                  Check out my <a href="#projects">project section</a>
+                  for some of the many projects I have worked on.
+                  <br>
+                  For any question oYou can contact me <a href="#contact">here.</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ********************************* SKILLS SECTION ************************************ -->
+        <div id="skill-section" class="container">
+          <div class="row">
+            <div class="col-12">
+              <h1 class="sub-header">Skills</h1>
+            </div>
+            <div class="col-md-4 col-sm-12">
+              <h5 class="skill-heading">Front-end</h5>
+              <div class="skills-content">
+                <ul>
+                  <li>HTML5, CSS3</li>
+                  <li>Bootstrap</li>
+                  <li>JavaScript, jQuery</li>
+                  <li>APIs, AJAX</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-12">
+              <div class="skills-content">
+                <h5 class="skill-heading">Back-end</h5>
+                <div class="skills-content">
+                  <ul>
+                    <li>Node.js</li>
+                    <li>Firebase</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-12">
+              <div class="skills-content">
+                <h5 class="skill-heading">Tools and Others</h5>
+                <div class="skills-content">
+                  <ul>
+                    <li>Git/GitHub</li>
+                    <li>Terminal Command</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- *************************** PROJECT SECTION *********************************** -->
+      <section id="projects">
+        <div class="container">
+          <div id="project-header">
+            <h1 class="sub-header projects-header  text text-center">Projects</h1>
+          </div>
+          <div class="row project-items border-1">
+            <div class="project-div">
+
+              <div class="col-lg-6">
+                <div class="card">
+                  <div class="card-body">
+                    <img src="assets/images/trivia animation.gif" class="card-img project-image" style="width: "
+                      alt="project image">
+                    <div class="card-img-overlay">
+                      <a target="_blank" rel="noopener noreferrer" href=" https://mia112.github.io/TriviaGame/"
+                        class="btn btn-outline-primary site-link">Website <i class="fas fa-external-link-alt"></i></a>
+                      <a target="_blank" rel="noopener noreferrer" href="https://github.com/Mia112/TriviaGame"
+                        class="btn btn-outline-primary site-link">GitHub <i class="fas fa-code"></i></a>
+                    </div>
+                    <p class="card-text project-text">Trivia is an application that will test your
+                      knowledge of Javascript with fifteen (20) multiple choice questions.
+                    </p>
+                    <p class="project-tech"><strong>Technologies:</strong> JavaScript, JQuery,
+                      CSS, Bootstrap 4,
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-div">
+              <div class="col-lg-6">
+                <div class="card">
+                  <div class="card-body">
+                    <img src="assets/images/giphy.gif" class="card-img project-image" alt="project image">
+                    <div class="card-img-overlay">
+                      <a target="_blank" rel="noopener noreferrer" href="https://mia112.github.io/GifTastic/"
+                        class="btn btn-outline-primary site-link">Website <i class="fas fa-external-link-alt"></i></a>
+                      <a target="_blank" rel="noopener noreferrer" href="https://github.com/Mia112/GifTastic"
+                        class="btn btn-outline-primary site-link">GitHub <i class="fas fa-code"></i></a>
+                    </div>
+                    <p class="card-text project-text">GifTastic is a single page app use to search
+                      gifs by keyword.
+                      The user can set the number of results to return. The gifs can be played and
+                      stopped.
+                    </p>
+                    <p class="project-tech"><strong>Technologies:</strong> APIs, AJAX, JQuery </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-div">
+            <div class="row project-items border-1">
+              <div class="col-lg-6">
+                <div class="card">
+                  <div class="card-body">
+                      <img src="assets/images/train.jpg" class="card-img project-image" alt="project image">
+                      <div class="card-img-overlay">
+                        <a target="_blank" rel="noopener noreferrer" href="https://mia112.github.io/GifTastic/"
+                        class="btn btn-outline-primary site-link">Website <i class="fas fa-external-link-alt"></i></a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://github.com/Mia112/GifTastic"
+                        class="btn btn-outline-primary site-link">GitHub <i class="fas fa-code"></i></a>
+                      </div>
+                    
+                    <h4>Train Scheduler</h4>
+                    <p class="card-text project-text">Train Scheduler is a train dashboard app that
+                      provides
+                      real time information
+                      about train arrival time.
+                    </p>
+                    <p class="project-tech"><strong>Technologies: </strong>JavaScript, JQuery,
+                      Firebase
+                      Realtime
+                      Database, Moment.js</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- *************************************** CONTACT SECTION *********************************************** -->
+      <section id="contact">
+        <!-- <div class="container">
+          <div class="row"> -->
+
+              <div class="container">
+                  <h1 class="sub-header">Contact</h1>
+                  <form>
+                      <div class="form-group">
+                          <label for="exampleFormControlInput1">Name</label>
+                          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="John Smith">
+                      </div>
+                      <div class="form-group">
+                          <label for="exampleFormControlInput1">Email</label>
+                          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="example@gmail.com">
+                      </div>
+                      <div class="form-group">
+                          <label for="exampleFormControlTextarea1">Message</label>
+                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                      </div>
+                      <button type="submit" class="btn btn-primary" style="background-color: #4aaaa5" ;>Submit</button>
+                  </form>
+
+
+            <!-- <div class="col-12">
+              <h1 class="sub-header">Contact Me</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-8 offset-lg-2 offset-md-2 col-md-8 col-sm-12 col-xs-12">
+              <div class="contact center-block">
+                <form class="form-group">
+                  <div class="row">
+                    <div class="col-lg-6 col-sm-12">
+                      <input id="name" type="text" class="form-control" placeholder="Name" required>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                      <input id="email" type="text" class="form-control" placeholder="Email" required>
+                    </div>
+                  </div>
+                  <br>
+                  <div class="form-group">
+                    <textarea id="message" class="form-control" id="exampleFormControlTextarea1" rows="3"
+                      placeholder="Message" required></textarea>
+                  </div>
+                  <br>
+
+                  <div class="col buttonCol" style="margin:auto; text-align: center;">
+                    <button id="submit-btn" type="submit" class="btn btn-secondary" data-toggle="modal">Send Message
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </section>
+    </div>
+    <div class="fixed-bottom">
+      <div id="copyright"><img src="assets/images/copyright16.png" alt="copyright icon">copyright</div>
+    </div>
+    <!-- 
+        <script src="/Users/msheriff/profile/assets/app.js"></script> -->
+  </body>
+
+</html>
