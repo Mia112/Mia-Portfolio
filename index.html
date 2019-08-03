@@ -15,8 +15,9 @@
 <body>
 
     <body data-spy="scroll" data-target=".navbar" data-offset="74">
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container">
+        <div class="header" id="myHeader">
+            <nav id="sticky-nav" class="navbar navbar-expand-lg navbar-dark">
+
                 <a class="navbar-brand" href="#">
                     <span class="logo">Miatta Sheriff</span>
                 </a>
@@ -47,10 +48,10 @@
                         </li>
                     </ul>
                 </div>
-            </div>
-        </nav>
+
+            </nav>
+        </div>
         <div class="container-fluid">
-            <div id="bg-home"></div>
             <section id="home">
                 <div class="container content">
                     <div class="row">
@@ -70,7 +71,7 @@
                 <div class="container content">
                     <div class="row">
                         <div class="col-12">
-                            <h1 class="sub-header">About Me</h1>
+                            <h1 id="about-me" class="sub-header">About Me</h1>
                         </div>
                     </div>
                     <div class="row">
@@ -78,7 +79,7 @@
                             <div class="col-12">
                                 <div class="img">
                                     <img class="rounded img-fluid max-width: 100%; and height: auto; profileImage"
-                                        src="assets/images/profileimg.JPG" alt="">
+                                        src="asset/images/profileimg.JPG" alt="">
                                 </div>
                             </div>
                             <div class="col-12">
@@ -168,17 +169,25 @@
             <!-- *************************** PROJECT SECTION *********************************** -->
             <section id="projects">
                 <div class="container">
-                    <div id="project-header">
-                        <h1 class="sub-header projects-header  text text-center">Projects</h1>
-                    </div>
+                    <h1 id="project-header" class="sub-header projects-header  text text-center">Projects</h1>
                     <div class="row project-items border-1">
-
                         <div id="project" class="col-md-4">
                             <div class="card">
                                 <div class="card-body">
                                     <img src="asset/images/CarMedLogo.png" class="card-img project-image"
                                         alt="project image">
                                     <div class="card-img-overlay">
+                                        <p class="card-text project-text"><strong>CarMed</strong> is a car maintenance
+                                            and overall car
+                                            health management dashboard.
+                                        </p>
+                                        <p class="project-tech"><strong>TECHNOLOGY USED:</strong> Firebase,
+                                            Google Maps, Places, Geolocation, and Youtube APIs.
+                                            Bootstrap, SVG Graphics, Keyframe Animations, and Responsive design.
+                                            IMPLEMENTED CONCEPTS: User input validation, AJAX: Local session data
+                                            storage and retrieval.
+
+                                        </p>
                                         <a target="_blank" rel="noopener noreferrer"
                                             href="https://mia112.github.io/project1/"
                                             class="btn btn-outline-primary site-link">Website <i
@@ -188,24 +197,22 @@
                                             class="btn btn-outline-primary site-link">GitHub <i
                                                 class="fas fa-code"></i></a>
                                     </div>
-                                    <h4 class="project-title">Trivia</h4>
-                                    <p class="card-text project-text">Trivia is an application that will test your
-                                        knowledge of Javascript with fifteen (20) multiple choice questions.
-                                    </p>
-                                    <p class="project-tech"><strong>Technologies:</strong> JavaScript, JQuery,
-                                        CSS, Bootstrap 4,
-                                    </p>
                                 </div>
                             </div>
                         </div>
-
-
                         <div id="project" class="col-md-4">
                             <div class="card">
                                 <div class="card-body">
                                     <img src="asset/images/trivia animation.gif" class="card-img project-image"
-                                       alt="project image">
+                                        alt="project image">
                                     <div class="card-img-overlay">
+                                        <p class="card-text project-text"><strong>Trivia</strong> is an application that
+                                            will test your
+                                            knowledge of Javascript with fifteen (15) multiple choice questions.
+                                        </p>
+                                        <p class="project-tech"><strong>TECHNOLOGY USED:</strong> JavaScript, JQuery,
+                                            CSS, and Bootstrap.
+                                        </p>
                                         <a target="_blank" rel="noopener noreferrer"
                                             href=" https://mia112.github.io/TriviaGame/"
                                             class="btn btn-outline-primary site-link">Website <i
@@ -215,23 +222,22 @@
                                             class="btn btn-outline-primary site-link">GitHub <i
                                                 class="fas fa-code"></i></a>
                                     </div>
-                                    <h4 class="project-title">Trivia</h4>
-                                    <p class="card-text project-text">Trivia is an application that will test your
-                                        knowledge of Javascript with fifteen (20) multiple choice questions.
-                                    </p>
-                                    <p class="project-tech"><strong>Technologies:</strong> JavaScript, JQuery,
-                                        CSS, Bootstrap 4,
-                                    </p>
                                 </div>
                             </div>
                         </div>
-
                         <div id="project" class="col-md-4">
                             <div class="card">
                                 <div class="card-body">
                                     <img src="asset/images/giphy.gif" class="card-img project-image"
                                         alt="project image">
                                     <div class="card-img-overlay">
+                                        <p class="card-text project-text"><strong>GifTastic</strong>
+                                            is a single page app use to search
+                                            gifs by keyword.The user can search and add their own desired gifs within
+                                            the choosen category.
+                                        </p>
+                                        <p class="project-tech"><strong>TECHNOLOGY USED:</strong> Javascript, JQuery,
+                                            APIs, and AJAX</p>
                                         <a target="_blank" rel="noopener noreferrer"
                                             href="https://mia112.github.io/GifTastic/"
                                             class="btn btn-outline-primary site-link">Website <i
@@ -241,18 +247,10 @@
                                             class="btn btn-outline-primary site-link">GitHub <i
                                                 class="fas fa-code"></i></a>
                                     </div>
-                                    <h4 class="project-title">GifTastic</h4>
-                                    <p class="card-text project-text">GifTastic is a single page app use to search
-                                        gifs by keyword.
-                                        The user can set the number of results to return. The gifs can be played and
-                                        stopped.
-                                    </p>
-                                    <p class="project-tech"><strong>Technologies:</strong> APIs, AJAX, JQuery </p>
                                 </div>
                             </div>
                         </div>
                     </div>
-
                     <div class="row project-items border-1">
                         <div id="project" class="col-md-4">
                             <div class="card">
@@ -260,32 +258,39 @@
                                     <img src="asset/images/train.jpg" class="card-img project-image"
                                         alt="project image">
                                     <div class="card-img-overlay">
+                                        <p class="card-text project-text"><strong>Train-Scheduler</strong> is an
+                                            application that update users with real-time
+                                            train schedule based on user input.
+                                        </p>
+                                        <p class="project-tech"><strong>TECHNOLOGY USED:</strong> Firebase, JavaScript,
+                                            JQuery,
+                                            CSS, and Bootstrap.
+                                        </p>
                                         <a target="_blank" rel="noopener noreferrer"
-                                            href="https://mia112.github.io/GifTastic/"
+                                            href="https://mia112.github.io/Train-Scheduler/"
                                             class="btn btn-outline-primary site-link">Website <i
                                                 class="fas fa-external-link-alt"></i></a>
                                         <a target="_blank" rel="noopener noreferrer"
-                                            href="https://github.com/Mia112/GifTastic"
+                                            href="https://github.com/Mia112/Train-Scheduler"
                                             class="btn btn-outline-primary site-link">GitHub <i
                                                 class="fas fa-code"></i></a>
                                     </div>
-                                    <h4 class="project-title">Trivia</h4>
-                                    <p class="card-text project-text">Trivia is an application that will test your
-                                        knowledge of Javascript with fifteen (20) multiple choice questions.
-                                    </p>
-                                    <p class="project-tech"><strong>Technologies:</strong> JavaScript, JQuery,
-                                        CSS, Bootstrap 4,
-                                    </p>
+
                                 </div>
                             </div>
                         </div>
-
                         <div id="project" class="col-md-4">
                             <div class="card">
                                 <div class="card-body">
                                     <img src="asset/images/crystal.jpg" class="card-img project-image"
                                         alt="project image">
                                     <div class="card-img-overlay">
+                                        <p class="card-text project-text"><strong>The Crystals Collector</strong>
+                                            is a jQuery game that takes you on a crystal collection mission.
+
+                                        </p>
+                                        <p class="project-tech"><strong>TECHNOLOGY USED:</strong> JavaScript, JQuery,
+                                            CSS, and Bootstrap. </p>
                                         <a target="_blank" rel="noopener noreferrer"
                                             href=" https://mia112.github.io/Crystals-Collector/"
                                             class="btn btn-outline-primary site-link">Website <i
@@ -295,23 +300,21 @@
                                             class="btn btn-outline-primary site-link">GitHub <i
                                                 class="fas fa-code"></i></a>
                                     </div>
-                                    <h4 class="project-title">Crystals-Collector</h4>
-                                    <p class="card-text project-text">Crystals-Collector is an application that will
-                                        The user can set the number of results to return. The gifs can be played and
-                                        stopped.
-                                    </p>
-                                    <p class="project-tech"><strong>Technologies:</strong> APIs, AJAX, JQuery </p>
                                 </div>
                             </div>
                         </div>
-
-
                         <div id="project" class="col-md-4">
                             <div class="card">
                                 <div class="card-body">
                                     <img src="asset/images/hangman.png" class="card-img project-image"
                                         alt="project image">
                                     <div class="card-img-overlay">
+                                        <p class="card-text project-text"><strong>Hangman Word Guessing Game</strong> is
+                                            a word guessing that will challenge you.
+
+                                        </p>
+                                        <p class="project-tech"><strong>TECHNOLOGY USED:</strong> JavaScript, JQuery,
+                                            CSS, and Bootstrap. </p>
                                         <a target="_blank" rel="noopener noreferrer"
                                             href="https://mia112.github.io/Word-Guess-Game/"
                                             class="btn btn-outline-primary site-link">Website <i
@@ -321,14 +324,7 @@
                                             class="btn btn-outline-primary site-link">GitHub <i
                                                 class="fas fa-code"></i></a>
                                     </div>
-                                    <h4 class="project-title">Word Gussing Game</h4>
-                                    <p class="card-text project-text">Word Gussing Game is a single page app use to
-                                        search
-                                        gifs by keyword.
-                                        The user can set the number of results to return. The gifs can be played and
-                                        stopped.
-                                    </p>
-                                    <p class="project-tech"><strong>Technologies:</strong> APIs, AJAX, JQuery </p>
+
                                 </div>
                             </div>
                         </div>
@@ -338,12 +334,7 @@
             <!-- *************************************** CONTACT SECTION *********************************************** -->
             <section id="contact">
                 <div class="container">
-                    <div class="row">
-
-                        <div class="col-12">
-                            <h1 class="sub-header">Contact Me</h1>
-                        </div>
-                    </div>
+                        <h1 id="contact-header"></h1>Contact Me</h1>
                     <div class="row">
                         <div class="col-lg-8 offset-lg-2 offset-md-2 col-md-8 col-sm-12 col-xs-12">
                             <div class="contact center-block">
@@ -374,14 +365,14 @@
                             </div>
                         </div>
                     </div>
-                </div> -->
+                </div>
             </section>
         </div>
         <div class="fixed-bottom">
-            <div id="copyright"><img src="assets/images/copyright16.png" alt="copyright icon">copyright</div>
+            <div id="copyright"><img src="asset/images/copyright16.png" alt="copyright icon">copyright</div>
         </div>
-        <!-- 
-        <script src="/Users/msheriff/profile/assets/app.js"></script> -->
+
+        <script src="asset/app.js"></script>
     </body>
 
 </html>
