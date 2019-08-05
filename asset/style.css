@@ -30,7 +30,7 @@ body {
 #about {
   padding: 60px 0;
   height: auto;
-  color: black;
+  color:  #4b4a4a;
   background-image: url(/Users/msheriff/Mia-Portfolio/asset/images/bgpic.png);
 
 }
@@ -99,12 +99,9 @@ body {
 .logo {
   padding: 1rem;
   border-radius: 10px;
-  /* border: 1px solid #a7a7a7; */
-  font-style: italic;
   font-family: 'DM Sans', sans-serif;
   font-weight: 700;
   margin-bottom: 20px;
-  background: rgb(4, 117, 117);
   color: rgb(255, 255, 255);
 }
 .content {
@@ -188,7 +185,10 @@ body {
 /* About - section 2 */
 
 /* ==================================== */
-
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
 .profileImage {
   transition: 1s ease-in;
   transition: 1s ease-out;
@@ -199,30 +199,74 @@ body {
   transform: scale(1.03);
 }
 
-.aboutMe,
-.mySkills,
-.myProjects,
-.myContact,
-.social-div {
-  transition: 0.3s linear;
-  overflow: hidden;
-  height: 4rem;
-  width: 0;
-  opacity: 0;
-}
-
 #about-me{
-  color: #ffffff;
-  background-color: #06756c;
+  color: #4b4a4a;
   text-align: center;
   font-weight: 500;
 }
 
-.show-element {
- text-align: center;
+
+#social-icons{
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 30px;
+}
+#social-icons h2 {
+    color: #fff;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    font-weight: 100;
+  }
+  #social-icons.social {
+    padding-left: 0px;
+  }
+  #social-icons.li {
+  
+    list-style-type: none;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    padding: 1%;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    transition: 0.5s ease-in;
+    transition: 0.5s ease-out;
+     /* &:hover {
+      color: rgba(167, 146, 129, 1);
+      border: 1px solid rgba(167, 146, 129, 1);
+    } */
+ 
+
+  }
+.social:hover > li {
+  opacity: 0.5;
 }
 
-.social-div .fa:hover {
+.social:hover > li:hover {
+  opacity: 1;
+} 
+
+#social-icons .fa:hover {
+  transform: scale(1.05);
+}
+
+.icon {
+  float: left;
+  padding: 10px;
+  margin: 5px;
+  
+
+}
+
+.show-element {
+  width: 100%;
+  opacity: 1;
+}
+
+#social-test .fa:hover {
   transform: scale(1.05);
 }
 
@@ -230,22 +274,12 @@ body {
   color: #046096;
 }
 
-.fa-github-square {
+.fa-github {
   color: black;
 }
 
 .fa-envelope {
   color: #c9352f;
-}
-
-.social-div .fab,
-.social-div .fas,
-.social-div .far {
-  font-size: 3rem;
-  margin: 1rem 0.5rem;
-  transition: 0.5s ease-in;
-  transition: 0.5s ease-out;
-  text-align: center;
 }
 
 p {
@@ -275,7 +309,7 @@ p {
 
 .skill-heading {
   color: #ffffff;
-  background-color: #06756c;
+  background-color: #000000;
   padding: .3rem;
   text-align: center;
   border-radius: 5px;
@@ -289,12 +323,6 @@ ul {
 
 }
 
-.skill-content {
-  padding-left: 5px;
-  font-size: 1rem;
-  font-style: italic;
-  background: #b45252;
-}
 
 /*======================================*/
 
@@ -304,7 +332,7 @@ ul {
 
 
 #project-header {
-  color: rgb(255, 255, 255);
+  color:  #4b4a4a;
   text-align: center;
 }
 
@@ -441,12 +469,9 @@ input {
   margin-bottom: 10px;
 }
 
-.contactheader {
-  margin-bottom: 50px;
-}
 
 #submit-btn {
-  background: rgb(4, 117, 117);
+  background: rgb(36, 36, 36);
   color: #fff;
   border: none;
   position: relative;
@@ -474,7 +499,7 @@ input {
   right: 0;
   height: 2px;
   width: 0;
-  background: rgb(4, 117, 117);
+  background: rgb(53, 53, 53);
   transition: 400ms ease all;
 }
 
@@ -486,10 +511,8 @@ input {
   box-shadow: 7px 7px 4px rgb(88, 88, 88);
 }
 #contact-header {
-  color: #ffffff;
-  background-color: #06756c;
+  color: #4b4a4a;
   text-align: center;
-  font-weight: 500;
 }
 #contact {
   padding: 10px;
